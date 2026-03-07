@@ -1,0 +1,7 @@
+{:source-paths ["src"],
+ :component-rules
+ [{:component :core, :match "dependency-checker.core*"}
+  {:component :cli, :match "dependency-checker.cli*"}],
+ :allowed-dependencies {:cli [], :core [:cli]},
+ :fail-on-cycles true,
+ :fail-on-violations true}

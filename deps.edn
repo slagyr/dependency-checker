@@ -1,0 +1,6 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.12.0"}
+        speclj/speclj {:mvn/version "3.10.0"}}
+ :aliases {:check-dependencies {:main-opts ["-m" "dependency-checker.core"]}
+           :spec {:main-opts ["-m" "speclj.main" "-c"]
+                  :extra-paths ["spec"]}}}
