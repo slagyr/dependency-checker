@@ -32,9 +32,10 @@ Then run with `bb check-dependencies` (same arguments as below).
     clj -M:check-dependencies dependency-checker.edn
     clj -M:check-dependencies dependency-checker.edn --format edn
     clj -M:check-dependencies --no-color
+    clj -M:check-dependencies --no-edges
     clj -M:check-dependencies --help
 
-Use `--help` to print a usage summary to stdout. Use `--no-color` to disable ANSI color output.
+Use `--help` to print a usage summary to stdout. Use `--no-color` to disable ANSI color output. Use `--no-edges` to omit the Component Dependencies listing from the report.
 
 Create or recreate starter config:
 
